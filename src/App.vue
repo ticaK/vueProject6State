@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <counter-component/>
+   <new-comp />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CounterComponent from './components/CounterComponent.vue'
+import NewComp from './components/NewComp.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    CounterComponent,
+    NewComp
   }
 }
 </script>
